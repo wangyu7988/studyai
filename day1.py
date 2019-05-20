@@ -38,7 +38,9 @@ print(nd.dot(X, Y.T))
 S = nd.concat(X, Y, dim=0), nd.concat(X, Y, dim=1)
 print(S)
 
-print(X.norm().asscalar())
+print("this is X1", X)
+print(nd.array([3, 4]).norm())
+print("this is X2", X.norm().asscalar())
 
 X[1:2, :] = 12
 print(X)
@@ -52,5 +54,10 @@ print(before)
 P = np.ones((2, 3))
 D = nd.array(P)
 
+
+
 print(P, D)
 print(D.asnumpy())
+
+
+

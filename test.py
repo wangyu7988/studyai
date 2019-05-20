@@ -6,7 +6,19 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+from sklearn.preprocessing.data import minmax_scale
+
 import jieba
+
+
+
+def minmax_demo():
+
+    data = [[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]]
+    minmax = minmax_scale(data)
+
+
+    print(minmax)
 
 
 def datasets_demo():
@@ -70,5 +82,7 @@ if __name__ == "__main__":
 
      # count_demo()
 
-     tf_demo()
+     #tf_demo()
+
+     minmax_demo()
 
